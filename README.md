@@ -1,4 +1,4 @@
-# Copenhagen Theme by Zendesk
+# Copenhagen Theme by Zendesk WOW
 
 The Copenhagen theme is a responsive theme for Zendesk Guide. It is designed to be used together with [Theming Center](https://support.zendesk.com/hc/en-us/community/topics/115000528387-Zendesk-Guide-beta-Theming-Center)
 
