@@ -534,7 +534,7 @@ ul {
   white-space: nowrap;
 }
 
-.user-info > [role="button"]:hover, .user-info > [role="button"]:focus {
+.user-info > [role="button"]:hover {
   color: $link_color;
   background-color: transparent;
 }
@@ -713,7 +713,7 @@ ul {
 /***** Hero component *****/
 .hero {
   background-image: url($homepage_background_image);
-  background-position: center;
+  background-position: $homepage_bg_position;
   background-size: cover;
   height: 300px;
   padding: 0 20px;
@@ -830,7 +830,7 @@ ul {
   box-sizing: border-box;
   color: $brand_color;
   display: flex;
-  flex: 1 0 340px;
+  flex: 1 0 $column_width;
   flex-direction: column;
   justify-content: center;
   margin: 0 0 30px;
