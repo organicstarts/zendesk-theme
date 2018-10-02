@@ -328,6 +328,35 @@
           "description": "scoped_community_search_description",
           "label": "scoped_community_search_label",
           "value": true
+        },
+        {
+          "identifier": "search_bar_position",
+          "type": "list",
+          "description": "search_bar_position_description",
+          "label": "search_bar_position_label",
+          "value": "center",
+          "options": [
+            {
+              "label": "Center",
+              "value": "center"
+            },
+            {
+              "label": "Top-Left",
+              "value": "top-left"
+            },
+            {
+              "label": "Top-Right",
+              "value": "top-right"
+            },
+            {
+              "label": "Bottom-Left",
+              "value": "bottom-left"
+            },
+            {
+              "label": "Bottom-Right",
+              "value": "bottom-right"
+            }
+          ]
         }
       ]
     },

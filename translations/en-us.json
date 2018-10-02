@@ -34,6 +34,8 @@
   "scoped_knowledge_base_search_description": "Search results are confined to the category the user is in",
   "scoped_community_search_label": "Scoped search in Community",
   "scoped_community_search_description": "Search results are confined to the topic the user is in",
+  "search_bar_position_description": "Determines the position of the search bar",
+  "search_bar_position_label": "Search bar alignment",
   "home_page_group_label": "Home page elements",
   "recent_activity_label": "Recent activity",
   "recent_activity_description": "Show recent activity on home page",

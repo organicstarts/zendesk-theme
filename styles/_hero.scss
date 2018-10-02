@@ -11,6 +11,30 @@
   &-inner {
     @include vertical-align;
     max-width: 610px;
-    margin: 0 auto;
+
+    &-center {
+      top: 50%;
+      margin: 0 auto;
+    }
+
+    &-top-left {
+      top: 10%;
+      margin: 0 auto 0 0;
+    }
+
+    &-top-right {
+      top: 10%;
+      margin: 0 0 0 auto;
+    }
+
+    &-bottom-left {
+      top: 90%;
+      margin: 0 auto 0 0;
+    }
+
+    &-bottom-right {
+      top: 90%;
+      margin: 0 0 0 auto;
+    }
   }
 }
