@@ -1,15 +1,71 @@
-<header class="header">
-  <div class="logo">
-    {{#link 'help_center'}}
-      <img src="{{settings.logo}}" alt="{{t 'home_page' name=help_center.name}}">
-    {{/link}}
+<nav class="ui right sidebar vertical menu">
+  <a class="item" id="sidebar-close"><i class="material-icons">&#xE5CD;</i></a>
+  <a class="item" href="https://support.organicstart.com/hc/en-us/categories/115000448613-Nutrition" title="Nutrition">Nutrition &amp; Ingredients</a>
+  <a class="item" href="https://support.organicstart.com/hc/en-us/sections/115000941634-Common-Q-As" title="Common Q&As">Common Q&amp;As</a>
+  <a class="item" href="https://support.organicstart.com/hc/en-us/categories/115000447534-Instructions" title="Instructions">Preperation &amp; Instructions</a>
+  <a class="item" href="https://support.organicstart.com/hc/en-us/categories/115000448813-Orders" title="Orders">Order Questions</a>
+  <a class="item" href="https://support.organicstart.com/hc/en-us/categories/115000448633-Wholesale" title="Wholesale">Everything Wholesale</a>
+  <a class="item" href="https://support.organicstart.com/hc/en-us/articles/360000114354" title="Inventory">Inventory Levels</a>
+  <a class="item" href="https://support.organicstart.com/hc/en-us/sections/360000011453-Loyalty-Rewards-Program" title="Loyalty Rewards Program">Loyalty Rewards Program</a>
+  <a class="item" href="https://support.organicstart.com/hc/en-us/sections/360000011473-Gift-Certificates" title="Gift Certificates">Gift Certificates</a>
+  <a class="item" href="https://support.organicstart.com/hc/en-us/requests/new" title="Tech Support">Tech Support</a>
+</nav>
+<div class="pusher" itemscope="itemscope" itemtype="http://schema.org/WebPageElement">
+  <div class="ui small borderless inverted pink main menu d-print-none">
+      <nav class="container">
+          <a class="item" href="https://organicstart.com">Retail</a>
+          <a class="item" href="https://organicstartwholesale.com">Wholesale</a>
+          <a class="item" href="https://blog.organicstart.com">Blog</a>
+          <a class="active item" href="https://support.organicstart.com/hc/en-us">Support</a>
+      </nav>
   </div>
-  <div class="nav-wrapper">
-    <span class="icon-menu" tabindex="0" role="button" aria-controls="user-nav" aria-expanded="false" aria-label="{{t 'toggle_navigation'}}"></span>
-    <nav class="user-nav" id="user-nav">
-      {{link 'community'}}
-      {{link 'new_request' class='submit-a-request'}}
-    </nav>
-    {{user_info}}
+  <div class="ui borderless site menu d-print-none">
+      <div class="container">
+          <div id="icon" class="icon item"> 
+              <a title="Organic Start" href="https://support.organicstart.com/hc/en-us">
+                  <img src="{{asset 'icon-transparent-1000.png'}}" title="Organic Start" alt="Organic Start">
+              </a>
+          </div>
+          <nav class="ui left text menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+              <span class="item" itemprop="name"><a class="item pl-0 pr-0" itemprop="url" href="https://support.organicstart.com/hc/en-us/sections/115000941634-Common-Q-As" title="Common Q&As">Q&amp;As</a></span>
+             	<span class="item" itemprop="name"><a class="item pl-0 pr-0" itemprop="url" href="https://support.organicstart.com/hc/en-us/categories/115000448613-Nutrition" title="Nutrition">Nutrition</a></span>
+              <span class="item" itemprop="name"><a class="item pl-0 pr-0" itemprop="url" href="https://support.organicstart.com/hc/en-us/categories/115000447534-Instructions" title="Instructions">Instructions</a></span>
+              <span class="item" itemprop="name"><a class="item pl-0 pr-0" itemprop="url" href="https://support.organicstart.com/hc/en-us/categories/115000448813-Orders" title="Orders">Orders</a></span>
+              <span class="item" itemprop="name"><a class="item pl-0 pr-0" itemprop="url" href="https://support.organicstart.com/hc/en-us/categories/115000448633-Wholesale" title="Wholesale">Wholesale</a></span>
+              <span class="item" itemprop="name"><a class="item pl-0 pr-0" itemprop="url" href="https://support.organicstart.com/hc/en-us/articles/360000114354" title="Inventory">Inventory</a></span>
+              <span class="item" itemprop="name"><a class="item pl-0 pr-0" itemprop="url" href="https://support.organicstart.com/hc/en-us/sections/360000011453-Loyalty-Rewards-Program" title="Loyalty Rewards Program">Rewards</a></span>
+              <span class="item" itemprop="name"><a class="item pl-0 pr-0" itemprop="url" href="https://support.organicstart.com/hc/en-us/sections/360000011473-Gift-Certificates" title="Gift Certificates">Gift Certificates</a></span>
+          </nav>
+          <div class="ui right text menu">
+              <!--<div class="ui pointing account dropdown link item">
+                  <span class="text"><i class="material-icons">&#xE853;</i></span>
+                  <div class="menu">
+                      <div class="text-center header">
+                        Retail
+                      </div>
+                      <div class="divider mt-0 mb-0"></div>
+                      <a class="item" href="https://organicstart.com/account.php?action=order_status">Orders</a>
+                      <a class="item" href="https://organicstart.com/account.php?action=account_details">Settings</a>
+                      <a class="item" href="https://organicstart.com/account.php?action=inbox">Messages</a>
+                      <a class="item" href="https://organicstart.com/account.php?action=address_book">Address Book</a>
+                      <a class="item" href="https://www.affiliatly.com/af-101054/affiliate.panel">Affiliate Panel</a>
+                      <div class="divider mt-0 mb-0"></div>
+                      <div class="text-center header">
+                        Wholesale
+                      </div>
+                      <div class="divider mt-0 mb-0"></div>
+                      <a class="item" href="https://organicstartwholesale.com/account">Dashboard</a>
+                      <a class="item" href="https://organicstartwholesale.com/account/addresses">Address Book</a>
+                  </div>
+              </div>-->
+              <a class="item" id="menuTrigger">
+                  <i class="material-icons">&#xE5D2;</i>
+              </a>
+          </div>
+      </div>
   </div>
-</header>
+  <header class="container text-center" itemscope itemtype="http://schema.org/WPHeader">
+    <a title="Organic Start" href="https://support.organicstart.com/hc/en-us">
+      <img src="{{asset 'logo-1000.png'}}" alt="Organic Start" class="ui large image mx-auto img-fluid">
+    </a>
+  </header>

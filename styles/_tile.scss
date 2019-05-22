@@ -1,0 +1,29 @@
+.tile {
+    margin: 2rem auto;
+  
+  & a, & a:hover {
+    color: #333!important;
+  }
+  & a .bg {
+      background: #333;
+    background-image: radial-gradient(circle, #fbbd08, #94c120);
+    background-position: 50% 0%;
+    background-size: 200% 200%;
+    -webkit-animation-play-state: paused;
+      -moz-animation-play-state: paused;
+      -o-animation-play-state: paused;
+       animation-play-state: paused;
+  }
+  & a .bg:hover {
+      -webkit-animation: gradient 5s ease infinite;
+      -moz-animation: gradient 5s ease infinite;
+      -o-animation: gradient 5s ease infinite;
+      animation: gradient 5s ease infinite;
+  }
+  & a .bg img {
+    margin: -1px;
+    width: calc(100% + 5px);
+    max-width: calc(100% + 2px);
+    height: auto;
+  }
+}

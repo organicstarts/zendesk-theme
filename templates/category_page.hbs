@@ -1,4 +1,240 @@
-<div class="container-divider"></div>
+<div class="container" style="max-width:1300px;width:100%;position:relative;">
+  <div class="ui divider"></div>
+  <div class="row">
+    <header class="col-12 col-lg-8 order-2 order-lg-1 align-self-center" id="category-container">
+      <h1 class="ui header">
+        {{category.name}}
+        {{#if category.description}}
+        <div class="sub header">{{category.description}}</div>
+        {{/if}}
+      </h1>
+    </header>
+    <aside class="col-12 col-lg-4 order-1 order-lg-1 align-self-center">
+      {{search scoped=true submit=false}}
+      <div class="ui divider d-lg-none d-xl-none"></div>
+    </aside>
+  </div>
+  <div class="ui divider"></div>
+  {{#if sections}}
+  <section class="row">
+    <div class="section col-12 col-md-6 col-lg-4">
+      <img class="img-fluid mx-auto d-none" src="{{asset 'lacey-nutrition.png'}}" id="lacey-nutrition">
+      <img class="img-fluid mx-auto d-none" src="{{asset 'lacey-instructions.png'}}" id="lacey-instructions">
+      <img class="img-fluid mx-auto d-none" src="{{asset 'lacey-wholesale.png'}}" id="lacey-wholesale">
+      <img class="img-fluid mx-auto d-none" src="{{asset 'lacey-orders.png'}}" id="lacey-orders">
+      {{#each sections}}
+      {{#is @index 0}}
+      {{else}}
+      {{#is @index 1}}
+      {{else}}
+      {{#is @index 3}}
+      {{else}}
+      {{#is @index 4}}
+      {{else}}
+      {{#is @index 6}}
+      {{else}}
+      {{#is @index 7}}
+      {{else}}
+      {{#is @index 9}}
+      {{else}}
+      {{#is @index 10}}
+      {{else}}
+      {{#is @index 12}}
+      {{else}}
+      {{#is @index 13}}
+      {{else}}
+      <div class="ui fluid vertical menu">
+        <h3 class="header item">
+          {{#if internal}}
+          <i class="ui red lock icon" title="{{t 'internal'}}"></i>
+          {{/if}}
+          <a href="{{url}}" class="text-success">{{name}}</a>
+        </h3>
+        {{#if articles}}
+        {{#each articles}}
+        <a class="item" href="{{url}}" class="article-list-link">
+          {{#if promoted}}
+          <i class="ui yellow star icon" data-title="{{t 'promoted'}}"></i>
+          {{/if}}
+          {{title}}
+        </a>
+        {{/each}}
+        {{#if more_articles}}
+        <a href="{{url}}" class="ui bottom attached olive button">
+          {{t 'show_all_articles' count=article_count}}
+        </a>
+        {{/if}}
+        {{else}}
+
+        <a class="disabled item" href="{{url}}">
+          This section is currently empty.
+        </a>
+        {{/if}}
+      </div>
+      {{/is}}
+      {{/is}}
+      {{/is}}
+      {{/is}}
+      {{/is}}
+      {{/is}}
+      {{/is}}
+      {{/is}}
+      {{/is}}
+      {{/is}}
+      {{/each}}
+    </div>
+    <div class="section col-12 col-md-6 col-lg-4">{{#each sections}}
+      {{#is @index 1}}
+      {{else}}
+      {{#is @index 2}}
+      {{else}}
+      {{#is @index 4}}
+      {{else}}
+      {{#is @index 5}}
+      {{else}}
+      {{#is @index 7}}
+      {{else}}
+      {{#is @index 8}}
+      {{else}}
+      {{#is @index 10}}
+      {{else}}
+      {{#is @index 11}}
+      {{else}}
+      {{#is @index 13}}
+      {{else}}
+      {{#is @index 14}}
+      {{else}}
+      <div class="ui fluid vertical menu">
+        <h3 class="header item">
+          {{#if internal}}
+          <i class="ui red lock icon" title="{{t 'internal'}}"></i>
+          {{/if}}
+          <a href="{{url}}" class="text-success">{{name}}</a>
+        </h3>
+        {{#if articles}}
+        {{#each articles}}
+        <a class="item" href="{{url}}" class="article-list-link">
+          {{#if promoted}}
+          <i class="ui yellow star icon" data-title="{{t 'promoted'}}"></i>
+          {{/if}}
+          {{title}}
+        </a>
+        {{/each}}
+        {{#if more_articles}}
+        <a href="{{url}}" class="ui bottom attached olive button">
+          {{t 'show_all_articles' count=article_count}}
+        </a>
+        {{/if}}
+        {{else}}
+
+        <a class="disabled item" href="{{url}}">
+          This section is currently empty.
+        </a>
+        {{/if}}
+      </div>
+      {{/is}}
+      {{/is}}
+      {{/is}}
+      {{/is}}
+      {{/is}}
+      {{/is}}
+      {{/is}}
+      {{/is}}
+      {{/is}}
+      {{/is}}
+      {{/each}}
+    </div>
+    <div class="section col-12 col-md-6 col-lg-4">
+      {{#each sections}}
+      {{#is @index 0}}
+      {{else}}
+      {{#is @index 2}}
+      {{else}}
+      {{#is @index 3}}
+      {{else}}
+      {{#is @index 5}}
+      {{else}}
+      {{#is @index 6}}
+      {{else}}
+      {{#is @index 8}}
+      {{else}}
+      {{#is @index 9}}
+      {{else}}
+      {{#is @index 11}}
+      {{else}}
+      {{#is @index 12}}
+      {{else}}
+      <div class="ui fluid vertical menu">
+        <h3 class="header item">
+          {{#if internal}}
+          <i class="ui red lock icon" title="{{t 'internal'}}"></i>
+          {{/if}}
+          <a href="{{url}}" class="text-success">{{name}}</a>
+        </h3>
+        {{#if articles}}
+        {{#each articles}}
+        <a class="item" href="{{url}}" class="article-list-link">
+          {{#if promoted}}
+          <i class="ui yellow star icon" data-title="{{t 'promoted'}}"></i>
+          {{/if}}
+          {{title}}
+        </a>
+        {{/each}}
+        {{#if more_articles}}
+        <a href="{{url}}" class="ui bottom attached olive button">
+          {{t 'show_all_articles' count=article_count}}
+        </a>
+        {{/if}}
+        {{else}}
+
+        <a class="disabled item" href="{{url}}">
+          This section is currently empty.
+        </a>
+        {{/if}}
+      </div>
+      {{/is}}
+      {{/is}}
+      {{/is}}
+      {{/is}}
+      {{/is}}
+      {{/is}}
+      {{/is}}
+      {{/is}}
+      {{/is}}
+      {{/each}}
+    </div>
+  </section>
+  {{else}}
+  <div class="ui large icon teal message mt-0">
+    <i class="ui info icon"></i>
+    <div class="content">
+      <div class="header">
+        This Category is Currently Empty
+      </div>
+      <p class="mt-0">Please check back soon as we continue to grow our knowledge base.</p>
+    </div>
+  </div>
+  {{/if}}
+  {{!-- <div class="back-wrapper">
+    <div class="back">
+      <a href="#" class="btn-back" onclick="window.history.back()">
+        <div>
+          <svg width="16px" height="14px" viewBox="0 0 16 14">
+            <path d="M1,7 L15,7"></path>
+            <polyline points="7 1 1 7 7 13"></polyline>
+          </svg>
+        </div>
+        <span>Back</span>
+      </a>
+      <div class="menu-back">
+        {{breadcrumbs}}
+
+      </div>
+    </div>
+  </div> --}}
+</div>
+
+{{!-- <div class="container-divider"></div>
 <div class="container">
   <nav class="sub-nav">
     {{breadcrumbs}}
@@ -49,4 +285,4 @@
       </div>
     </div>
   </div>
-</div>
+</div> --}}

@@ -1,47 +1,83 @@
 /***** Search field *****/
 .search {
-  position: relative;
+    position: relative;
 
-  input[type="search"] {
-    border: 1px solid $border-color;
-    border-radius: 30px;
-    box-sizing: border-box;
-    color: $field-text-color;
-    height: 40px;
-    padding-left: 40px;
-    padding-right: 20px;
-    -webkit-appearance: none;
-    width: 100%;
+    input[type="search"] {
+        border: 1px solid $border-color;
+        border-radius: 30px;
+        box-sizing: border-box;
+        color: $field-text-color;
+        height: 40px;
+        padding-left: 40px;
+        padding-right: 20px;
+        -webkit-appearance: none;
+        width: 100%;
 
-    [dir="rtl"] & {
-      padding-right: 40px;
-      padding-left: 20px;
+        [dir="rtl"] & {
+            padding-right: 40px;
+            padding-left: 20px;
+        }
+
+        &:focus {
+            border: 1px solid $brand_color;
+            color: $field-text-focus-color;
+        }
     }
 
-    &:focus {
-      border: 1px solid $brand_color;
-      color: $field-text-focus-color;
+
+    &::before {
+        @extend .icon;
+        @include vertical-align;
+        background-color: #fff;
+        color: #777;
+        content: "\1F50D";
+        font-size: 18px;
+        position: absolute;
+        left: 15px;
+
+        [dir="rtl"] & {
+            right: 15px;
+            left: auto;
+        }
     }
-  }
 
-
-  &::before {
-    @extend .icon;
-    @include vertical-align;
-    background-color: #fff;
-    color: #777;
-    content: "\1F50D";
-    font-size: 18px;
-    position: absolute;
-    left: 15px;
-
-    [dir="rtl"] & {
-      right: 15px;
-      left: auto;
+    &-full input[type="search"] {
+        border: 1px solid #fff;
     }
-  }
+}
 
-  &-full input[type="search"] {
-    border: 1px solid #fff;
-  }
+
+form.search-full::before {
+    color: rgba(0, 0, 0, 0.85);
+    margin: 0 1rem;
+    background: transparent;
+}
+
+form.search-full input[type="search"]::placeholder {
+    color: rgba(0, 0, 0, 0.85);
+}
+
+form.search-full input[type="search"] {
+    /*font-size: 2.4rem;*/
+    color: rgba(0, 0, 0, 0.95);
+    border: none;
+    background: #fff;
+    padding: 4rem 6rem;
+    -moz-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+}
+
+form.search-full input[type="search"]:hover {
+    border: none;
+    -moz-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.45);
+    -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.45);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.45);
+}
+
+form.search-full input[type="search"]:focus {
+    border: none;
+    -moz-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.6);
 }

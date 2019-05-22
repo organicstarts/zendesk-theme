@@ -1,4 +1,4 @@
-<div class="container-divider"></div>
+{{!-- <div class="container-divider"></div>
 <div class="container">
   <nav class="sub-nav">
     {{breadcrumbs}}
@@ -60,4 +60,77 @@
 
     </section>
   </div>
+</div> --}}
+
+<div class="container" style="max-width:1300px;width:100%;position:relative;">
+  <div class="ui divider"></div>
+  <div class="row">
+  	<header class="col-12 col-lg-8 order-2 order-lg-1 align-self-center" id ="section-container">
+      <h1 class="ui header">
+        {{section.name}}
+        {{#if section.internal}}
+          <span class="icon-lock" title="{{t 'internal'}}"></span>
+        {{/if}}
+        {{#if section.description}}
+          <div class="sub header">{{section.description}}</div>
+        {{/if}}
+      </h1>
+    </header>
+    <aside class="col-12 col-lg-4 order-1 order-lg-1 align-self-center">
+      {{search scoped=true submit=false}}
+      <div class="ui divider d-lg-none d-xl-none"></div>
+    </aside>
+  </div>
+  <div class="ui divider"></div>
+  {{#if section.articles}}
+  	<section class="row">
+      <div class="section col-12 col-md-6 col-lg-4 d-none" id="lacey-qas">
+				<img class="img-fluid mx-auto" src="{{asset 'lacey-qas.png'}}">
+      </div>
+      <div class="section col-12 col-md-6 col-lg-8" id="mainside">
+      	 <div class="ui large fluid vertical menu">
+          {{#each section.articles}}
+              {{#if promoted}}
+                <span data-title="{{t 'promoted'}}" class="icon-star"></span>
+              {{/if}}
+              <a href="{{url}}" class="item">{{title}}</a>
+          {{/each}}
+        </div>
+      </div>
+  	</section>
+  {{else}}
+    <div class="ui large icon teal message mt-0">
+      <i class="ui info icon"></i>
+      <div class="content">
+        <div class="header">
+          This Section is Currently Empty
+        </div>
+        <p class="mt-0">Please check back soon as we continue to grow our knowledge base.</p>
+      </div>
+    </div>
+  {{/if}}
+
+  {{pagination}}
+  
+  {{!-- <div class="back-wrapper">
+    <div class="back">
+      <a href="#" class="btn-back" onclick="window.history.back()">
+        <div>
+          <svg width="16px" height="14px" viewBox="0 0 16 14">
+            <path d="M1,7 L15,7"></path>
+            <polyline points="7 1 1 7 7 13"></polyline>
+          </svg>
+        </div>
+        <span>Back</span>
+      </a>
+      <div class="menu-back">
+        {{breadcrumbs}}
+        <!--<ul class="nav-links">
+          <li><a href="#">My Account</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Support / Help</a></li>
+        </ul>-->
+      </div>
+    </div>
+  </div> --}}
 </div>

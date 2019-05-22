@@ -1,14 +1,14 @@
 /***** Header *****/
 $header-height: 71px;
 
-.header {
-  @include max-width-container;
-  position: relative;
-  align-items: center;
-  display: flex;
-  height: $header-height;
-  justify-content: space-between;
-}
+// .header {
+//   @include max-width-container;
+//   position: relative;
+//   align-items: center;
+//   display: flex;
+//   height: $header-height;
+//   justify-content: space-between;
+// }
 
 .logo img {
   max-height: 37px;
