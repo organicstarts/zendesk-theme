@@ -1,26 +1,62 @@
 /** ORGANIC START **/
-h2,h3,h4,h5,h6{font-weight:400!important}
-h1{font-size:4rem!important}
-h2{font-size:3rem!important}
-h3{font-size:2.5rem!important}
-h4{font-size:2rem!important}
-h5{font-size:1.5rem!important}
-h6{font-size:1rem!important}
-.wysiwyg-font-size-small{font-size:small!important}
-@font-face{
-  font-family: Icons;
-  src:url('$assets-icons-eot');
-  src:url('$assets-icons-eot?#iefix') format('embedded-opentype'),
-    	url('$assets-icons-woff2') format('woff2'),
-    	url('$assets-icons-woff') format('woff'),
-    	url('$assets-icons-ttf') format('truetype'),
-    	url('$assets-icons-svg#icons') format('svg');
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400 !important
 }
-i.flag:not(.icon):before{background:url('$assets-flags-png') no-repeat -108px -1976px!important;}
+
+h1 {
+    font-size: 4rem !important
+}
+
+h2 {
+    font-size: 3rem !important
+}
+
+h3 {
+    font-size: 2.5rem !important
+}
+
+h4 {
+    font-size: 2rem !important
+}
+
+h5 {
+    font-size: 1.5rem !important
+}
+
+h6 {
+    font-size: 1rem !important
+}
+
+.wysiwyg-font-size-small {
+    font-size: small !important
+}
+
+@font-face {
+    font-family: Icons;
+    src: url('$assets-icons-eot');
+    src: url('$assets-icons-eot?#iefix') format('embedded-opentype'),
+        url('$assets-icons-woff2') format('woff2'),
+        url('$assets-icons-woff') format('woff'),
+        url('$assets-icons-ttf') format('truetype'),
+        url('$assets-icons-svg#icons') format('svg');
+}
+
+i.flag:not(.icon):before {
+    background: url('$assets-flags-png') no-repeat -108px -1976px !important;
+}
+
 .ui.main.menu {
-  margin: 0!important;
+    margin: 0 !important;
 }
 
 .pink-text {
-  color: #ff8edf
+    color: #ff8edf
+}
+
+.pink-text:hover {
+    color: #e61a8d
 }

@@ -1500,6 +1500,10 @@ form.search-full input[type="search"]:focus {
   color: $text_color;
 }
 
+.article-sidebar-item a:hover {
+  color: #c71f7e;
+}
+
 .article-sidebar a {
   color: #e61a8d;
 }
@@ -1535,7 +1539,6 @@ form.search-full input[type="search"]:focus {
 }
 
 .article-votes {
-  border-top: 1px solid #ddd;
   padding: 30px 0;
   text-align: center;
 }
@@ -1552,6 +1555,7 @@ form.search-full input[type="search"]:focus {
 .article-vote::before {
   font-size: 8px;
   margin-right: 10px;
+  color: #e61a8d;
 }
 
 [dir="rtl"] .article-vote::before {
@@ -3398,8 +3402,7 @@ form.search-full input[type="search"]:focus {
 }
 
 .meta-data:not(:last-child)::after {
-  content: "\00B7";
-  margin: 0 5px;
+  display: none;
 }
 
 /***** Icons *****/
@@ -4351,7 +4354,11 @@ html[lang|="th"] .search-result-description em {
 }
 
 /** ORGANIC START **/
-h2, h3, h4, h5, h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 400 !important;
 }
 
@@ -4399,6 +4406,10 @@ i.flag:not(.icon):not(.search::before):not(.article-vote::before):not(.vote-up::
 
 .pink-text {
   color: #ff8edf;
+}
+
+.pink-text:hover {
+  color: #e61a8d;
 }
 
 #inventory-key {

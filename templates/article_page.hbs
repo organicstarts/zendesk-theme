@@ -120,20 +120,20 @@
             </div>
           </footer>
 
-          <section class="article-relatives">
-            {{#if settings.show_related_articles}}
-            {{related_articles}}
-            {{/if}}
-            {{#if settings.show_recently_viewed_articles}}
-            {{recent_articles}}
-            {{/if}}
 
-          </section>
         </div>
 
       </section>
 
+      <section class="article-relatives">
+        {{#if settings.show_related_articles}}
+        {{related_articles}}
+        {{/if}}
+        {{#if settings.show_recently_viewed_articles}}
+        {{recent_articles}}
+        {{/if}}
 
+      </section>
 
 
       {{!-- {{#if settings.show_article_comments}}
