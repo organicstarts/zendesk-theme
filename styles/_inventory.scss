@@ -1,0 +1,50 @@
+#inventory-key {
+    text-align: center
+}
+
+.inventory-key>.item {
+    border-radius: 0.75rem;
+    color: #fff !important;
+    vertical-align: middle;
+    padding: 1rem;
+    text-align: center;
+    width: 12.99% !important;
+    display: inline-block !important;
+}
+
+.ui.horizontal.list .list>.item>.content,
+.ui.horizontal.list .list>.item>.icon,
+.ui.horizontal.list .list>.item>.image,
+.ui.horizontal.list>.item>.content,
+.ui.horizontal.list>.item>.icon,
+.ui.horizontal.list>.item>.image {
+    vertical-align: middle !important
+}
+
+.full {
+    background-color: #66da81 !important
+}
+
+.alot {
+    background-color: #b4d95c !important
+}
+
+.enough {
+    background-color: #ddc928 !important
+}
+
+.low {
+    background-color: #e6bb48 !important
+}
+
+.lowest {
+    background-color: #efbc72 !important
+}
+
+.selling-out {
+    background-color: #d95c5c !important
+}
+
+.sold-out {
+    background-color: rgba(0, 0, 0, .1) !important
+}

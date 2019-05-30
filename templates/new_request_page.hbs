@@ -1,9 +1,6 @@
-<div class="container-divider"></div>
+{{!-- <div class="container-divider"></div>
 <div class="container">
-  <nav class="sub-nav">
-    {{breadcrumbs}}
-    {{search submit=false}}
-  </nav>
+
 
   <h1>
     {{t 'submit_a_request'}}
@@ -17,4 +14,96 @@
   <div class="form">
     {{request_form}}
   </div>
+</div> --}}
+<div class="container" style="max-width:1300px;width:100%;position:relative;">
+  <div class="ui divider"></div>
+  <nav class="sub-nav">
+    {{breadcrumbs}}
+    {{search submit=false}}
+  </nav>
+  <div class="row">
+    <section class="col-12 col-lg-8 order-2 order-lg-1 offset-lg-2 align-self-center text-center"
+      id="article-container">
+      <header>
+        <h1>
+          {{t 'submit_a_request'}}
+          {{#if follow_up}}
+          <span class="follow-up-hint">
+            {{follow_up}}
+          </span>
+          {{/if}}
+        </h1>
+      </header>
+      <div class="ui divider"></div>
+    </section>
+    <div class="col-12 col-lg-8 order-3 order-lg-2 offset-lg-2" id="article-container">
+      <div class="ui large icon green message mt-0 d-none" id="new_request_done">
+        <i class="ui check icon"></i>
+        <div class="content">
+          <div class="header">
+            Request Submission Successful
+          </div>
+          <p class="mt-0">No worries, we recieved your request and will respond as soon as possible.</p>
+        </div>
+      </div>
+      <img src="{{asset 'waits-stopsign.gif'}}" class="ui small image img-fluid mx-auto" />
+      <br>
+      <p class="text-center wysiwyg-font-size-x-large">
+        <strong>Your time is precious. Don't waste it on emails.</strong>
+      </p>
+      <p class="text-center wysiwyg-font-size-large">
+        We have answered hundreds of questions in our knowledge base.<br><br>
+        Your question is likely already answered.<br>Use the search form below to find your question.
+      </p>
+      <div class="col-12 col-lg-8 order-3 order-lg-2 offset-lg-2" id="request_search">
+        {{search scoped=true submit=false}}
+      </div>
+      <p class="text-center wysiwyg-font-size-large mt-2 mb-2">
+        <a href="https://organicstart.com/comparison-chart-hipp-holle-lebenswert-topfer-nannycare/"
+          target="_blank">Click here to compare key ingredients such as soy, starch and more between brands and stages
+          in a simple comparison chart.</a>
+      </p>
+      <div class="ui negative icon message mb-4">
+        <i class="warning icon"></i>
+        <div class="content">
+          <p>
+            <strong>Unfortunately at this time HiPP has limited supply of German HA &amp; Dutch. We are not sure when
+              these products will be back in-stock. We are waiting on many pallets of product from HiPP.<br><br><a
+                href="https://organicstartwholesale.com" target="_blakn">Organic Start Wholesale</a> will be the first
+              to have these products back in-stock. You can subscribe to be notified at their listings on the
+              site.</strong><br><br>
+            Here are suitable alternatives to Dutch:<br>
+            Dutch Stage 1 -> <a href="https://organicstart.com/hipp/germany/stage-pre/" target="_blank">German Stage
+              PRE</a> or <a href="https://organicstart.com/hipp/uk/stage-1/" target="_blank">UK Stage 1</a><br>
+            Dutch Stage 2 -> <a href="https://organicstart.com/hipp/germany/stage-2/" target="_blank">German Stage 2
+              without Starch</a><br>
+            Dutch Stage 3 -> <a href="https://organicstart.com/hipp/uk/stage-3/" target="_blank">UK Stage 3</a>
+            <br><br>
+            <strong>We do not have any other stores that we can recommend that sell these products.</strong>
+          </p>
+        </div>
+      </div>
+      <div class="ui warning icon message mb-4">
+        <i class="question icon"></i>
+        <div class="content">
+          <p>
+            <strong>Looking for a product that is currently out of stock?</strong><br><br>
+            <strong>It is likely available at <a href="https://organicstartwholesale.com" target="_blank">Organic Start
+                Wholesale</a>.</strong><br>Even with express shipping, it is still cheaper than our retail
+            store.<br><br>
+            <strong>If wholesale does not work for you at this time:</strong> we recommend subscribing for notifications
+            at the product listing and waiting a couple of days. Many pallets of product arrive to our warehouse daily.
+            Products are normally out of stock for a short period of time.<br><br>
+            <strong>If you need formula urgently:</strong> you may use a temporary suitable alternative.<br><a href="#"
+              target="_blank">Click here to find alternatives.</a> <small>(coming soon)</small>
+        </div>
+      </div>
+      <div class="ui divider"></div>
+      <div class="ui form">
+        {{request_form}}
+      </div>
+      {{chat}}
+    </div>
+  </div>
+
 </div>
