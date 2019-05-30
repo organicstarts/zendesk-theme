@@ -3,6 +3,7 @@
   <nav class="sub-nav">
     {{breadcrumbs}}
   </nav>
+  
   <div class="row">
     <header class="col-12 col-lg-8 order-2 order-lg-1 align-self-center" id="category-container">
       <h1 class="ui header">
@@ -67,7 +68,7 @@
           {{#if internal}}
           <i class="ui red lock icon" title="{{t 'internal'}}"></i>
           {{/if}}
-          <a href="{{url}}" class="text-success">{{name}}</a>
+          <a href="{{url}}" class="pink-text">{{name}}</a>
         </h3>
         {{#if articles}}
         {{#each articles}}
@@ -79,7 +80,7 @@
         </a>
         {{/each}}
         {{#if more_articles}}
-        <a href="{{url}}" class="ui bottom attached olive button">
+        <a href="{{url}}" class="ui bottom attached pink button">
           {{t 'show_all_articles' count=article_count}}
         </a>
         {{/if}}
@@ -156,7 +157,7 @@
           {{#if internal}}
           <i class="ui red lock icon" title="{{t 'internal'}}"></i>
           {{/if}}
-          <a href="{{url}}" class="text-success">{{name}}</a>
+          <a href="{{url}}" class="pink-text">{{name}}</a>
         </h3>
         {{#if articles}}
         {{#each articles}}
@@ -168,7 +169,7 @@
         </a>
         {{/each}}
         {{#if more_articles}}
-        <a href="{{url}}" class="ui bottom attached olive button">
+        <a href="{{url}}" class="ui bottom attached pink button">
           {{t 'show_all_articles' count=article_count}}
         </a>
         {{/if}}
@@ -246,7 +247,7 @@
           {{#if internal}}
           <i class="ui red lock icon" title="{{t 'internal'}}"></i>
           {{/if}}
-          <a href="{{url}}" class="text-success">{{name}}</a>
+          <a href="{{url}}" class="pink-text">{{name}}</a>
         </h3>
         {{#if articles}}
         {{#each articles}}
@@ -258,7 +259,7 @@
         </a>
         {{/each}}
         {{#if more_articles}}
-        <a href="{{url}}" class="ui bottom attached olive button">
+        <a href="{{url}}" class="ui bottom attached pink button">
           {{t 'show_all_articles' count=article_count}}
         </a>
         {{/if}}

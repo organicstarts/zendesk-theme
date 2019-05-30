@@ -4397,6 +4397,10 @@ i.flag:not(.icon):not(.search::before):not(.article-vote::before):not(.vote-up::
   margin: 0 !important;
 }
 
+.pink-text {
+  color: #ff8edf;
+}
+
 #inventory-key {
   text-align: center;
 }
