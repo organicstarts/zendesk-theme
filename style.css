@@ -7,7 +7,7 @@
 body {
   background-color: $background_color;
   color: $text_color;
-  font-family: $text_font;
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif !important;
   font-size: 15px;
   font-weight: 400;
   line-height: 1.5;
@@ -21,7 +21,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $heading_font;
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif !important;
   font-weight: 400;
   margin-top: 0;
 }
@@ -1945,7 +1945,7 @@ form.search-full input[type="search"]:focus {
   -webkit-hyphens: auto;
   word-break: break-word;
   word-wrap: break-word;
-  font-family: $text_font;
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif !important;
   line-height: 1.6;
   overflow-x: auto;
 }
@@ -2225,7 +2225,7 @@ form.search-full input[type="search"]:focus {
   content: attr(data-follower-count);
   color: $brand_color;
   display: inline-block;
-  font-family: $heading_font;
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif !important;
   margin-left: 15px;
   padding-left: 10px;
   position: absolute;
@@ -2494,7 +2494,7 @@ form.search-full input[type="search"]:focus {
 }
 
 .post-content {
-  font-family: $text_font;
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif !important;
   line-height: 1.6;
   word-break: break-word;
 }
@@ -4354,6 +4354,17 @@ html[lang|="th"] .search-result-description em {
 }
 
 /** ORGANIC START **/
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+a {
+  font-family: 'Varela Round', -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif !important;
+}
+
 h2,
 h3,
 h4,
