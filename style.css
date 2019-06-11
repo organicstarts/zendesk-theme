@@ -617,6 +617,10 @@ input[type="submit"][disabled] {
   width: 14px;
 }
 
+.request-section .ui.inverted.segment {
+  background: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%)!important;
+}
+
 /***** Footer *****/
 .footer {
   border-top: 1px solid #ddd;
@@ -649,12 +653,8 @@ input[type="submit"][disabled] {
   font-weight: 300;
 }
 
-#footer-color {
-  background: linear-gradient(to top, #c471f5 0%, #fa71cd 100%)!important;
-}
-
 footer {
-  background-image: none !important;
+  background: linear-gradient(120deg, #f093fb 0%, #f5576c 100%)!important;
 }
 
 /***** Breadcrumbs *****/
@@ -4407,7 +4407,7 @@ i.flag:not(.icon):not(.search::before):not(.article-vote::before):not(.vote-up::
 }
 
 .ui.inverted.menu .pink.active.item, .ui.inverted.pink.menu {
-  background-color: #ec407a;
+  background-color: #ec407a!important;
 }
 
 .pink-text {
