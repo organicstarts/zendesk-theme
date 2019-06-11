@@ -622,6 +622,9 @@ input[type="submit"][disabled] {
 }
 
 /***** Footer *****/
+footer {
+  background-image: none!important;
+}
 .page-footer {
   background: linear-gradient(to top, #f77062 0%, #ec407a 100%)!important;
 }
