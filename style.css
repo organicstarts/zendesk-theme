@@ -622,6 +622,9 @@ input[type="submit"][disabled] {
 }
 
 /***** Footer *****/
+.page-footer {
+  background: linear-gradient(to top, #f77062 0%, #ec407a 100%)!important;
+}
 .footer {
   border-top: 1px solid #ddd;
   margin-top: 60px;
@@ -651,10 +654,6 @@ input[type="submit"][disabled] {
   color: lighten($text_color, 20%);
   display: inline-block;
   font-weight: 300;
-}
-
-footer {
-  background: linear-gradient(to top, #f77062 0%, #ec407a 100%)!important;
 }
 
 /***** Breadcrumbs *****/
