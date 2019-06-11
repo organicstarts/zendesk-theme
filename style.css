@@ -174,7 +174,9 @@ ul {
   margin: 0;
   padding: 0 20px;
   text-align: center;
-  transition: background-color .12s ease-in-out, border-color .12s ease-in-out, color .15s ease-in-out;
+  transition: background-color .12s ease-in-out,
+ border-color .12s ease-in-out,
+ color .15s ease-in-out;
   user-select: none;
   white-space: nowrap;
   width: 100%;
@@ -648,7 +650,7 @@ input[type="submit"][disabled] {
 }
 
 #footer-color {
-  background-image: linear-gradient(140deg, #d59fc8 0%, #c1289d 100%) !important;
+  background: linear-gradient(to top, #c471f5 0%, #fa71cd 100%)!important;
 }
 
 footer {
@@ -776,9 +778,9 @@ form.search-full input[type="search"]:focus {
 /***** Hero component *****/
 .hero {
   background: white;
-  background: -moz-linear-gradient(top, white 0%, white 50%, rgba(193, 31, 155, 0.25) 100%);
-  background: -webkit-linear-gradient(top, white 0%, white 50%, rgba(193, 31, 155, 0.25) 100%);
-  background: linear-gradient(to bottom, white 0%, white 50%, rgba(193, 31, 155, 0.25) 100%);
+  background: -moz-linear-gradient(top, white 0%, white 25%, rgba(236, 64, 122, 0.25) 100%);
+  background: -webkit-linear-gradient(top, white 0%, white 25%, rgba(236, 64, 122, 0.25) 100%);
+  background: linear-gradient(to bottom, white 0%, white 25%, rgba(236, 64, 122, 0.25) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#c11f9b',GradientType=0 );
   background-position: center;
   background-size: cover;
@@ -4402,6 +4404,10 @@ i.flag:not(.icon):not(.search::before):not(.article-vote::before):not(.vote-up::
 
 .ui.main.menu {
   margin: 0 !important;
+}
+
+.ui.inverted.menu .pink.active.item, .ui.inverted.pink.menu {
+  background-color: #ec407a;
 }
 
 .pink-text {
