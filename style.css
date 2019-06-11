@@ -618,7 +618,7 @@ input[type="submit"][disabled] {
 }
 
 .request-section .ui.inverted.segment {
-  background: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%)!important;
+  background: linear-gradient(0deg, #ec407a 0%, #FF719A 50%)!important;
 }
 
 /***** Footer *****/
@@ -654,7 +654,7 @@ input[type="submit"][disabled] {
 }
 
 footer {
-  background: linear-gradient(120deg, #f093fb 0%, #f5576c 100%)!important;
+  background: linear-gradient(to top, #f77062 0%, #ec407a 100%)!important;
 }
 
 /***** Breadcrumbs *****/
