@@ -241,26 +241,9 @@
   <script>
     $(function () {
       $.get("https://brainiac.organicstart.com/fb/getinventory").then(x => {
-        $("#inventory-key").append('      <div class="inventory-key">        <div class="sold-out item">Sold Out</div>        <div class="selling-out item">Limited</div>        <div class="lowest item">Selling Out</div>        <div class="low item">Low</div>        <div class="enough item">Moderate</div>        <div class="alot item">Sufficient</div>        <div class="full item">Full</div>      </div>      <div class="ui divider"></div>')
-        $(x.join("")).appendTo("#inventory");
-        $(".prog").each(function (e) {
-          if ("" != $(this).text().trim())
-            if ("divider" == $(this).text().trim()) $("#inventory").append('<div class="ui divider"></div>');
-            else {
-              var t = $(this).text().split(":");
-              if ("title" == t[0]) $("#inventory").append('<h2 class="mb-3">' + t[1] + "</h2>");
-              else {
-                if (t[1] > 74) var i = "green";
-                else i = t[1] > 49 ? "yellow" : t[1] > 24 ? "orange" : "red";
-                if ("00-00-0000" != t[2].trim()) {
-                  var n = !0,
-                    a = t[2].split("-");
-                  $.timeago.settings.allowPast = !1, $.timeago.settings.allowFuture = !0;
-                  var s = $.timeago(a[2] + "-" + a[0] + "-" + a[1])
-                } else n = !1;
-                $("#inventory").append('<div class="label"><strong>' + t[0] + "</strong>" + (1 == n ? '<p class="float-right">Restock in about  ' + s.replace("about ", "").replace(" from now", "") + ".</p>" : "") + '</div><div class="ui ' + i + ' indicating progress mt-0" data-percent="' + t[1] + '" id="bar-' + e + '" style="height:100%;"><div class="bar" style="width:' + t[1] + '%!important;min-width:0!important"></div></div>')
-              }
-            }
+        $("#loader").delay(500).fadeOut(function() {
+          $(x.join("")).appendTo("#inventory");
+          $("#inventory").fadeIn();
         })
       })
     });
