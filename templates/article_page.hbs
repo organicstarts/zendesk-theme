@@ -237,15 +237,20 @@
   </div>
 </div>
 
+
 {{#is article.title 'Current Inventory Levels'}}
+  <style>
+    .ui.loader {
+      
+    }
+  </style>
   <script>
     $(function () {
       $.get("https://brainiac.organicstart.com/fb/getinventory").then(x => {
         $("#loader").delay(500).fadeOut(function() {
-          $(x.join("")).appendTo("#inventory");
-          $("#inventory").fadeIn();
+          $("#inventory").append(x).fadeIn();
         })
       })
     });
   </script>
-  {{/is}}
+{{/is}}
