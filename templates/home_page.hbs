@@ -1,8 +1,186 @@
-<!DOCTYPE html>
-<html class="no-js" lang="en-US"></html>
-  <head>
-      <meta http-equiv="refresh" content="0;URL='http://alert.organicstart.com/'" />
-  </head>
-  <body>
-  </body>
-</html>
+<section class="section hero d-print-none">
+  <div class="hero-inner">
+    {{!-- {{search submit=false instant=settings.instant_search class='search search-full'}} --}}
+    <div class="container">
+      <img src="{{asset 'banner.png'}}?v=7" alt="We are here to help!" class="hero-banner img-fluid">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-4 text-md-right text-left hidden-md">
+          <img src="{{asset 'lacey-transparent.png'}}?v=3" alt="Lacey" class="lacey img-fluid">
+          <img src="{{asset 'new-monkey.png'}}" alt="Monkey" class="monkey d-none img-fluid">
+        </div>
+        <div class="col-12 col-md-4 order-1 order-md-1">
+          <a href="https://laceyandthemonkey.com" title="Lacey and the Monkey Website" target="_blank"><img
+              src="{{asset 'lacey-writing.png'}}?v=6" alt="Introducing Lacey and the Monkey"
+              class="lacey-writing img-fluid mt-2 mt-md-0 mb-0 mb-md-4"></a>
+          <img src="{{asset 'question.png'}}?=4" alt="Have a Question?" class="question-title img-fluid">
+          {{search submit=false instant=true placeholder='Type your question for us here... ' class='search search-full'}}
+        </div>
+        <div class="col-12 col-md-4 order-3 align-self-end">
+          <img src="{{asset 'new-monkey.png'}}?v=2" alt="Monkey" class="monkey-retina img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="ui vertical segment">
+  <div class="container">
+    <h1 class="text-center display-4">
+      Select a General Category Below
+    </h1>
+    <h2 class="text-center">
+      Explore questions, answers and so much more
+    </h2>
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-4 tile">
+        <a href="https://support.organicstart.com/hc/en-us/categories/115000448613-Nutrition">
+          <div class="bg">
+            <img src="{{asset 'nutrition.png'}}?v=5" alt="Nutrition" class="img-fluid">
+          </div>
+          <p class="text-center" style="color:rgba(0,0,0,.6);font-size:140%"><strong><em>Translated labels and
+                ingredients.</em></strong></p>
+        </a>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 tile">
+        <a href="https://support.organicstart.com/hc/en-us/sections/115000941634-Common-Q-As">
+          <div class="bg">
+            <img src="{{asset 'common-qas.png'}}?v=3" alt="Common Q&As" class="img-fluid">
+          </div>
+          <p class="text-center" style="color:rgba(0,0,0,.6);font-size:140%"><strong><em>A great resource for new
+                customers.</em></strong></p>
+        </a>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 tile">
+        <a href="https://support.organicstart.com/hc/en-us/categories/115000447534-Instructions">
+          <div class="bg">
+            <img src="{{asset 'instructions.png'}}?v=2" alt="Instructions" class="img-fluid">
+          </div>
+          <p class="text-center" style="color:rgba(0,0,0,.6);font-size:140%"><strong><em>Preperation and feeding
+                directions.</em></strong></p>
+        </a>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 tile">
+        <a href="https://support.organicstart.com/hc/en-us/categories/115000448813-Orders">
+          <div class="bg">
+            <img src="{{asset 'orders.png'}}?v=3" alt="Orders" class="img-fluid">
+          </div>
+          <p class="text-center" style="color:rgba(0,0,0,.6);font-size:140%"><strong><em>Problems with shipping and
+                returns.</em></strong></p>
+        </a>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 tile">
+        <a href="https://support.organicstart.com/hc/en-us/categories/115000448633-Wholesale">
+          <div class="bg">
+            <img src="{{asset 'wholesale.png'}}?v=3" alt="Wholesale" class="img-fluid">
+          </div>
+          <p class="text-center" style="color:rgba(0,0,0,.6);font-size:140%"><strong><em>Learn about our wholesale
+                division.</em></strong></p>
+        </a>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 tile">
+        <a href="https://support.organicstart.com/hc/en-us/articles/360000114354">
+          <div class="bg">
+            <img src="{{asset 'inventory.png'}}" alt="Inventory" class="img-fluid">
+          </div>
+          <p class="text-center" style="color:rgba(0,0,0,.6);font-size:140%"><strong><em>Track inventory levels and
+                ETAs.</em></strong></p>
+        </a>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 tile">
+        <a href="https://support.organicstart.com/hc/en-us/sections/360000011453-Loyalty-Points">
+          <div class="bg">
+            <img src="{{asset 'loyalty.png'}}?v=2" alt="Loyalty" class="img-fluid">
+          </div>
+          <p class="text-center" style="color:rgba(0,0,0,.6);font-size:140%"><strong><em>Rewards for recurring
+                customers.</em></strong></p>
+        </a>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 tile">
+        <a href="https://support.organicstart.com/hc/en-us/sections/360000011473-Gift-Certificates">
+          <div class="bg">
+            <img src="{{asset 'gift-certificates.png'}}?v=2" alt="Gift Certificates" class="img-fluid">
+          </div>
+          <p class="text-center" style="color:rgba(0,0,0,.6);font-size:140%"><strong><em>Send a friend or family store
+                credit.</em></strong></p>
+        </a>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 tile">
+        <a href="https://support.organicstart.com/hc/en-us/requests/new">
+          <div class="bg">
+            <img src="{{asset 'tech.png'}}?v=3" alt="Tech Support" class="img-fluid">
+          </div>
+          <p class="text-center" style="color:rgba(0,0,0,.6);font-size:140%"><strong><em>Trouble browsing or placing an
+                order.</em></strong></p>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{!-- <div class="container">
+  <section class="section knowledge-base">
+    <section class="categories blocks">
+      <ul class="blocks-list">
+        {{#each categories}}
+        {{#if ../has_multiple_categories}}
+        <li class="blocks-item">
+          <a href='{{url}}' class="blocks-item-link">
+            <h4 class="blocks-item-title">{{name}}</h4>
+            <p class="blocks-item-description">{{excerpt description}}</p>
+          </a>
+        </li>
+        {{else}}
+        {{#each sections}}
+        <li class="blocks-item">
+          <a href='{{url}}' class="blocks-item-link">
+            <h4 class="blocks-item-title">
+              {{name}}
+            </h4>
+            <p class="blocks-item-description">{{excerpt description}}</p>
+          </a>
+        </li>
+        {{/each}}
+        {{/if}}
+        {{/each}}
+      </ul>
+      {{pagination}}
+    </section>
+
+    {{#if promoted_articles}}
+    <section class="articles">
+      <h3>{{t 'promoted_articles'}}</h3>
+      <ul class="article-list promoted-articles">
+        {{#each promoted_articles}}
+        <li class="promoted-articles-item">
+          <a href="{{url}}">
+            {{title}}
+
+            {{#if internal}}
+            <span class="icon-lock" title="{{t 'internal'}}"></span>
+            {{/if}}
+          </a>
+        </li>
+        {{/each}}
+      </ul>
+    </section>
+    {{/if}}
+  </section>
+
+  {{#if help_center.community_enabled}}
+  <section class="section community">
+    <h2>{{t 'community'}}</h2>
+    {{#link 'community' class='community-link'}}
+    {{t 'join_conversation'}}
+    {{/link}}
+
+    <div class="community-image"></div>
+  </section>
+  {{/if}}
+
+  <section class="section activity">
+    {{#if settings.show_recent_activity}}
+    {{recent_activity}}
+    {{/if}}
+  </section>
+</div> --}}
